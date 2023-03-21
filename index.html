@@ -1,25 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>联合国</title>
-	<style>
-		body {
-			background-image: url("https://cdn.pixabay.com/photo/2021/03/10/07/11/united-nations-6088197_1280.jpg");
-			background-size: cover;
-			background-position: center;
-			margin: 0;
-			padding: 0;
-		}
-		h1 {
-			color: white;
-			font-size: 48px;
-			text-align: center;
-			margin-top: 100px;
-		}
-	</style>
-</head>
-<body>
-	<h1>联合国</h1>
-</body>
-</html>
+<style>
+  #heart {
+    width: 100px;
+    height: 90px;
+    position: relative;
+    margin: 50px auto;
+  }
+  #heart:before,
+  #heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  #heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
+}
+</style>
+<div id="heart"></div>
